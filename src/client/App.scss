@@ -1,0 +1,109 @@
+/*  Reset CSS   */
+button:focus {
+  border: none;
+  outline: 0 !important;
+}
+
+button {
+  border: none;
+}
+
+html,
+body {
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url('./fonts/fontello.eot?');
+  src: url('./fonts/fontello.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/fontello.woff2?') format('woff2'),
+    url('./fonts/fontello.woff?') format('woff'),
+    url('./fonts/fontello.ttf?') format('truetype'),
+    url('./fonts/fontello.svg?#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: 'fontello';
+  font-style: normal;
+  speak: none;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-variant: normal;
+  text-transform: none;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+
+.icon-heart-empty:before {
+  content: '\e800';
+}
+
+.icon-heart:before {
+  content: '\e801';
+}
+
+.icon-export:before {
+  content: '\e802';
+}
+
+
+/*      ScrollBar       */
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 5px;
+  cursor: pointer;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(216, 216, 216, 0.3);
+  border-radius: 100px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  opacity: 0.12;
+  background: rgba(0, 44, 113, 0.12);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0, 44, 113, 0.12);
+}
+
+.container__wrapper {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

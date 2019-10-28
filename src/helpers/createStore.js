@@ -2,9 +2,14 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import reducers from '../client/reducers';
 
-export default (req) => {
+export const middlewares = [thunk];
 
-  const store = createStore(reducers, {}, applyMiddleware(thunk));
+export const cStore = (req) => {
 
+  const store = createStore(
+    reducers,
+    applyMiddleware(...middlewares),
+  );
   return store;
+
 };

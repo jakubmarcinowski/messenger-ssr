@@ -26,6 +26,7 @@ module.exports = {
     "no-shadow": "off",
     "react/jsx-indent": "off",
     "indent": "off",
+    "arrow-body-style": "off",
     "no-tabs": "off",
     "react/require-default-props": "off",
   },

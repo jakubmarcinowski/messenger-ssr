@@ -8123,7 +8123,7 @@ eval("module.exports = __webpack_require__.p + \"fonts/fontello.woff\";\n\n//# s
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\n__webpack_require__(/*! ./HomePage.scss */ \"./src/client/pages/HomePage.scss\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar HomePage = function HomePage() {\n  return _react2.default.createElement(\n    'div',\n    { className: 'container' },\n    _react2.default.createElement(\n      'h1',\n      null,\n      'Hi'\n    )\n  );\n};\n\nexports.default = {\n  component: HomePage\n};\n\n//# sourceURL=webpack:///./src/client/pages/HomePage.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\n__webpack_require__(/*! ./HomePage.scss */ \"./src/client/pages/HomePage.scss\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar HomePage = function HomePage() {\n  return _react2.default.createElement(\n    'div',\n    { className: 'container__wrapper' },\n    _react2.default.createElement(\n      'div',\n      { className: 'container' },\n      _react2.default.createElement(\n        'h1',\n        null,\n        'Hi'\n      )\n    )\n  );\n};\n\nexports.default = {\n  component: HomePage\n};\n\n//# sourceURL=webpack:///./src/client/pages/HomePage.js?");
 
 /***/ }),
 

@@ -4,8 +4,10 @@ import './HomePage.scss';
 
 const HomePage = () => {
   return (
-    <div className="container">
-		<h1>Hi</h1>
+    <div className="container__wrapper">
+	    <div className="container">
+			<h1>Hi</h1>
+		</div>
 	</div>
   );
 };

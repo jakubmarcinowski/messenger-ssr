@@ -1,6 +1,7 @@
 module.exports = {
   // Tell webpack to run babel on every file
   mode: 'development',
+
   module: {
     rules: [{
         test: /\.js?$/,

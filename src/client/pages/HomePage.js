@@ -1,7 +1,13 @@
 import React from 'react';
 
+import './HomePage.scss';
+
 const HomePage = () => {
-  return <div>Hi</div>;
+  return (
+    <div className="container">
+		<h1>Hi</h1>
+	</div>
+  );
 };
 
 

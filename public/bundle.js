@@ -3930,6 +3930,17 @@ eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/pages/HomePage.scss":
+/*!*********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/pages/HomePage.scss ***!
+  \*********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".container {\\n  max-width: 498px;\\n  width: 100%;\\n  background: #FFFFFF;\\n  box-shadow: 0 0 4px 0 rgba(172, 172, 172, 0.5);\\n  border-radius: 5px;\\n  box-sizing: border-box;\\n  display: flex;\\n  flex-direction: column;\\n  align-items: stretch;\\n  position: relative;\\n  padding: 2.25em 1.25em 0 1.25em; }\\n  @media screen and (max-width: 500px) {\\n    .container {\\n      max-width: 320px; } }\\n  .container::before {\\n    position: absolute;\\n    top: 0;\\n    left: 0;\\n    content: '';\\n    width: 100%;\\n    height: 95px;\\n    background: #002C71;\\n    border-radius: 5px 5px 0 0; }\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/client/pages/HomePage.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/runtime/api.js":
 /*!*****************************************************!*\
   !*** ./node_modules/css-loader/dist/runtime/api.js ***!
@@ -8112,7 +8123,18 @@ eval("module.exports = __webpack_require__.p + \"fonts/fontello.woff\";\n\n//# s
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar HomePage = function HomePage() {\n  return _react2.default.createElement(\n    'div',\n    null,\n    'Hi'\n  );\n};\n\nexports.default = {\n  component: HomePage\n};\n\n//# sourceURL=webpack:///./src/client/pages/HomePage.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\n__webpack_require__(/*! ./HomePage.scss */ \"./src/client/pages/HomePage.scss\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar HomePage = function HomePage() {\n  return _react2.default.createElement(\n    'div',\n    { className: 'container' },\n    _react2.default.createElement(\n      'h1',\n      null,\n      'Hi'\n    )\n  );\n};\n\nexports.default = {\n  component: HomePage\n};\n\n//# sourceURL=webpack:///./src/client/pages/HomePage.js?");
+
+/***/ }),
+
+/***/ "./src/client/pages/HomePage.scss":
+/*!****************************************!*\
+  !*** ./src/client/pages/HomePage.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./HomePage.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/pages/HomePage.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/client/pages/HomePage.scss?");
 
 /***/ }),
 

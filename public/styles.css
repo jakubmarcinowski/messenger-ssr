@@ -85,6 +85,168 @@ h5 {
   left: 50%;
   transform: translate(-50%, -50%); }
 
+.profile {
+  background: #FFFFFF;
+  box-shadow: 0 0 4px 0 rgba(172, 172, 172, 0.5);
+  border-radius: 5px;
+  padding: 1.250em;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative; }
+  @media screen and (max-width: 500px) {
+    .profile {
+      padding-top: 2.375em; } }
+  .profile figure {
+    width: 100%;
+    display: inline-flex;
+    margin: 0; }
+    .profile figure img {
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 1.125em; }
+      @media screen and (max-width: 500px) {
+        .profile figure img {
+          position: absolute;
+          top: -48px;
+          left: 50%;
+          transform: translateX(-50%);
+          margin: 0; } }
+    .profile figure i {
+      padding: 0;
+      margin: 0;
+      cursor: pointer; }
+    .profile figure figcaption {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; }
+      @media screen and (max-width: 500px) {
+        .profile figure figcaption {
+          margin: 0 auto;
+          align-items: center; } }
+    .profile figure .like {
+      position: relative;
+      padding: 0;
+      background-color: transparent;
+      cursor: pointer;
+      color: #D3D3D3;
+      font-size: 1em; }
+    .profile figure .share {
+      cursor: pointer;
+      font-size: 0.75em;
+      position: absolute;
+      right: 0.750em;
+      top: 0.750em;
+      padding: 0;
+      background-color: transparent;
+      color: #FFA640; }
+    .profile figure h5,
+    .profile figure p {
+      font-family: Montserrat;
+      font-weight: normal; }
+    .profile figure .profile__header {
+      display: flex;
+      align-items: center; }
+      .profile figure .profile__header h5 {
+        margin: 0;
+        font-size: 1.125em;
+        color: #002C71;
+        letter-spacing: 0;
+        margin-right: 8px; }
+    .profile figure p {
+      font-size: 0.750em;
+      color: #8298b9;
+      letter-spacing: 0;
+      margin: 0;
+      padding: 0; }
+  .profile .popup {
+    font-size: 16px;
+    color: black;
+    position: absolute;
+    left: 0;
+    top: -40px;
+    z-index: 999;
+    margin: 0;
+    padding: 10px 30px;
+    background: #fff;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #999;
+    text-decoration: none; }
+  .profile__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.250em 0 0 0;
+    box-sizing: border-box; }
+    @media screen and (max-width: 500px) {
+      .profile__social {
+        flex-direction: column; } }
+    .profile__social dl {
+      list-style-type: none;
+      margin: 0 1.5em 0 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      font-family: Montserrat;
+      width: 100%; }
+      @media screen and (max-width: 500px) {
+        .profile__social dl {
+          margin: 0 0 1.313em 0; } }
+      .profile__social dl div {
+        text-align: center;
+        position: relative;
+        width: 100%;
+        padding: 0 1.250em; }
+        .profile__social dl div dd {
+          font-size: 1.5em;
+          color: #FFA640;
+          font-weight: normal;
+          letter-spacing: 0;
+          margin: 0; }
+        .profile__social dl div dt {
+          font-size: 0.625em;
+          color: #aab9d0;
+          letter-spacing: 0;
+          line-height: 1em;
+          margin: 0; }
+        .profile__social dl div::after {
+          content: '';
+          position: absolute;
+          height: 100%;
+          width: 1px;
+          background-color: #f4f4f4;
+          left: 0;
+          top: 0; }
+        .profile__social dl div:first-child::after {
+          display: none; }
+    .profile__social button {
+      padding: 15px 29px;
+      max-width: 140px;
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+      cursor: pointer;
+      background: #FFA640;
+      border-radius: 100px;
+      font-size: 0.875em;
+      box-sizing: border-box;
+      font-weight: bolder;
+      color: #FFFFFF;
+      letter-spacing: 0.263em; }
+      @media screen and (max-width: 500px) {
+        .profile__social button {
+          max-width: 100%;
+          width: 100%; } }
+
+.loading h1 {
+  color: #002C71;
+  font-family: Montserrat;
+  font-size: 1em;
+  font-weight: normal; }
+
+
 .container {
   max-width: 498px;
   width: 100%;

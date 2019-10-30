@@ -1,7 +1,6 @@
 module.exports = {
   // Tell webpack to run babel on every file
   mode: 'development',
-
   module: {
     rules: [{
         test: /\.js?$/,
@@ -9,13 +8,9 @@ module.exports = {
         exclude: /node_modules/,
         options: {
           presets: [
-            'react',
-            'stage-0',
-            ['env', {
-              targets: {
-                browsers: ['last 2 versions']
-              }
-            }]
+            '@babel/preset-env',
+            '@babel/preset-react',
+            { 'plugins': ['@babel/plugin-proposal-class-properties'] }
           ]
         }
       },
@@ -25,10 +20,16 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            outputPath: 'fonts/'
+            outputPath: 'fonts/',
           }
         }, ]
-      }
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader',
+        ],
+      },
     ]
   },
 }

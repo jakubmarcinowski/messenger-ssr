@@ -1,19 +1,20 @@
 import React from 'react';
 import { StateProvider } from 'reenhance-components';
+
 const LoadedState = StateProvider(false);
 
 /* eslint-disable */
-// Should be better
-//= ({ mobile, tablet, src, alt, width, height }) => 
+
 class ImageLoader extends React.Component {
   render() {
-    let { alt, height, mobile, src, tablet, width } = this.props;
-    src = require(`./../../${this.props.src}`);
-    mobile = require(`./../../${this.props.mobile}`);
-    tablet = require(`./../../${this.props.tablet}`);
+    let { alt, height, id, width } = this.props;
+    let mobile = `data/${this.props.id}_m.jpg`;
+    let tablet = `data/${this.props.id}_t.jpg`;
+    let src = `data/${this.props.id}.jpg`;
+
     return (
       <LoadedState>
-    {         
+    {   
       ({ state: loaded, setState: setLoaded }) => (
       <div>
         {!loaded ? (
@@ -45,6 +46,7 @@ class ImageLoader extends React.Component {
           height='70px'
           style={!loaded ? { visibility: 'hidden' } : {}}
           onLoad={() => {
+            console.log('tu');
             setLoaded(true);
           }}
         />

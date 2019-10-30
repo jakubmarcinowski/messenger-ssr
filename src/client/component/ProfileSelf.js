@@ -62,18 +62,16 @@ class ProfileSelf extends React.Component {
   }
   showModal = profile => {
     if (this.state.showModal) {
-      return <a href={profile.website} rel="noopener noreferrer" target="_blank" className="popup">{profile.website}</a>
+      return <a href={`https://${profile.website}`} rel="noopener noreferrer" target="_blank" className="popup">{profile.website}</a>
     };
   }
 
   renderProfile = profile => {
     const className = socialConfig['isLiked'][this.state.isLiked];
-    let mobile = `data/img/${profile.id}/${profile.id}_m.jpg`;
-    let tablet = `data/img/${profile.id}/${profile.id}_t.jpg`;
-    let src = `data/img/${profile.id}/${profile.id}.jpg`;
+
     return (
       <figure>
-                <ImageLoader alt={profile.name} width="70px" height="70px" mobile={mobile} tablet={tablet} src={src} />
+                <ImageLoader alt={profile.name} width="70px" height="70px" id={profile.id} />
                 <figcaption>
                 <button onClick={this.onModalClick} className="share icon-export" aria-hidden="true">
                     { this.showModal(profile) }

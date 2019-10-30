@@ -9,9 +9,6 @@ const app = express();
 
 app.use(express.static('public'));
 
-app.get('/styles.css', (req, res) => {
-  res.sendFile(`${__dirname}/styles.css`);
-});
 
 app.get('*', (req, res) => {
 

@@ -1,0 +1,12 @@
+.comments__input-wrapper {
+  &.false {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  &.true {
+    z-index: -1;
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}

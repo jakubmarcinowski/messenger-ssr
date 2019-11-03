@@ -13,7 +13,7 @@ const ImageLoader = ({ alt, height, id, width }) => {
   const tablet = `data/${id}_t.jpg`;
   const src = `data/${id}.jpg`;
   useEffect(() => {
-    const img = new Image(70, 70);
+    const img = new Image(width, height);
     img.onload = () => setLoaded(true);
     img.src = src;
     img.sizes = "(max-width: 1500px) 33vw, 40vw";
@@ -23,7 +23,7 @@ const ImageLoader = ({ alt, height, id, width }) => {
   }, []);
 
   return (
-    <div className="ImageWrapper" ref={ImageWrapper}>
+    <div style={{ width: `${width}px`,height:`${height}px` }} className="ImageWrapper" ref={ImageWrapper}>
       {!loaded ? (
         <svg x="0px" y="0px" width={width} height={height} viewBox="0 0 53 53">
                 <path style={{fill: '#E7ECED'}}  d="M18.613,41.552l-7.907,4.313c-0.464,0.253-0.881,0.564-1.269,0.903C14.047,50.655,19.998,53,26.5,53

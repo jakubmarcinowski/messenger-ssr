@@ -71,7 +71,7 @@ class ProfileSelf extends React.Component {
 
     return (
       <figure>
-        <ImageLoader alt={profile.name} width="70px" height="70px" id={profile.id} />
+        <ImageLoader alt={profile.name} width="70" height="70" id={profile.id} />
         <figcaption>
         <button onClick={this.onModalClick} className="share icon-export" aria-hidden="true">
             { this.showModal(profile) }

@@ -5,10 +5,13 @@ import Routes from './client/Routes';
 import render from './helpers/render';
 import { cStore } from './helpers/createStore';
 
+var compression = require('compression');
+
 const app = express();
 
-app.use(express.static('public'));
+app.use(compression());
 
+app.use(express.static('public'));
 
 app.get('*', (req, res) => {
 

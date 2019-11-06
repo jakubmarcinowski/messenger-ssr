@@ -1,6 +1,36 @@
+const webpack = require('webpack');
+
 module.exports = {
   // Tell webpack to run babel on every file
-  mode: 'development',
+  mode: 'production',
+  optimization: {
+    minimize: true,
+    splitChunks: {
+      chunks: 'async',
+      minSize: 30000,
+      maxSize: 0,
+      minChunks: 1,
+      maxAsyncRequests: 5,
+      maxInitialRequests: 3,
+      automaticNameDelimiter: '~',
+      automaticNameMaxLength: 30,
+      name: true,
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          priority: -10
+        },
+        default: {
+          minChunks: 2,
+          priority: -20,
+          reuseExistingChunk: true
+        }
+      }
+    }
+  },
+  plugins: [
+    new webpack.optimize.AggressiveMergingPlugin(),
+  ],
   module: {
     rules: [{
         test: /\.js?$/,

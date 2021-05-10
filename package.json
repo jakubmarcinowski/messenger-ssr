@@ -23,7 +23,7 @@
     "express-http-proxy": "^1.6.0",
     "fibers": "^4.0.2",
     "isomorphic-style-loader": "^5.1.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.13.0",
     "node-style-loader": "0.0.1-alpha",

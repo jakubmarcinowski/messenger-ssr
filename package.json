@@ -19,7 +19,7 @@
     "compression": "^1.7.4",
     "concurrently": "^3.6.1",
     "css-loader": "^3.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-http-proxy": "^1.6.0",
     "fibers": "^4.0.2",
     "isomorphic-style-loader": "^5.1.0",
